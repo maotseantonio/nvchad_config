@@ -7,7 +7,32 @@ return {
 
 { "nvchad/volt" , lazy = true },
 { "nvchad/menu" , lazy = true },
-
+{'tzachar/cmp-ai', dependencies = 'nvim-lua/plenary.nvim'},
+{'hrsh7th/nvim-cmp', dependencies = {'tzachar/cmp-ai'}},
+{
+    "Exafunction/codeium.nvim",
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+        "hrsh7th/nvim-cmp",
+    },
+    config = function()
+        require("codeium").setup({
+        })
+    end
+},
+{
+  "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "folke/trouble.nvim", -- optional
+      "nvim-telescope/telescope.nvim"
+    }
+},
 -- lazy.nvim
 {
   "folke/noice.nvim",

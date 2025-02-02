@@ -12,6 +12,10 @@ local options = {
 
   ui = {
     cmp = {
+      sources = {
+        -- ...
+        { name = "codeium" }
+      },
       icons_left = false, -- only for non-atom styles!
       lspkind_text = true,
       style = "default", -- default/flat_light/flat_dark/atom/atom_colored
