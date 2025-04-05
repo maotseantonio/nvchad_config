@@ -9,6 +9,12 @@ return {
 { "nvchad/menu" , lazy = true },
 {'tzachar/cmp-ai', dependencies = 'nvim-lua/plenary.nvim'},
 {'hrsh7th/nvim-cmp', dependencies = {'tzachar/cmp-ai'}},
+{
+  'vyfor/cord.nvim',
+   build = ':Cord update',
+    event = 'VeryLazy'
+  -- opts = {}
+},
 { 
     'IogaMaster/neocord',
     event = "VeryLazy"
