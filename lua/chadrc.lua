@@ -2,7 +2,7 @@
 local options = {
 
   base46 = {
-    theme = "oxocarbon", -- default theme
+    theme = "tokyodark", -- default theme
     hl_add = {},
     hl_override = {},
     integrations = {},
@@ -30,10 +30,10 @@ local options = {
 
     statusline = {
       enabled = true,
-      theme = "vscode_colored", -- default/vscode/vscode_colored/minimal
+      theme = "default", -- default/vscode/vscode_colored/minimal
       -- default/round/block/arrow separators work only for default statusline theme
       -- round and block will work for minimal theme only
-      separator_style = "default",
+      separator_style = "block",
       order = nil,
       modules = nil,
     },
