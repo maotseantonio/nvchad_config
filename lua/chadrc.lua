@@ -2,9 +2,15 @@
 local options = {
 
   base46 = {
-    theme = "tokyodark", -- default theme
+    theme = "rxyhn", -- default theme
     hl_add = {},
-    hl_override = {},
+    hl_override = {
+     Normal = {
+      bg = "#00070B",
+      fg = "#A9A9A9", 
+    },
+    },
+
     integrations = {},
     changed_themes = {},
     transparency = false,
