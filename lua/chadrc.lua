@@ -1,14 +1,13 @@
-
 local options = {
 
   base46 = {
     theme = "rxyhn", -- default theme
     hl_add = {},
     hl_override = {
-     Normal = {
-      bg = "#00070B",
-      fg = "#A9A9A9", 
-    },
+      Normal = {
+        bg = "#00070B",
+        fg = "#A9A9A9",
+      },
     },
 
     integrations = {},
@@ -23,11 +22,11 @@ local options = {
         -- ...
         { name = "codeium" }
       },
-      icons_left = false, -- only for non-atom styles!
+      icons_left = false,  -- only for non-atom styles!
       lspkind_text = true,
       style = "flat_dark", -- default/flat_light/flat_dark/atom/atom_colored
       format_colors = {
-        tailwind = true, -- will work for css lsp too
+        tailwind = true,   -- will work for css lsp too
         icon = "󱓻",
       },
     },
@@ -36,7 +35,7 @@ local options = {
 
     statusline = {
       enabled = true,
-      theme = "default", -- default/vscode/vscode_colored/minimal
+      theme = "minimal", -- default/vscode/vscode_colored/minimal
       -- default/round/block/arrow separators work only for default statusline theme
       -- round and block will work for minimal theme only
       separator_style = "block",
@@ -112,7 +111,7 @@ local options = {
   lsp = { signature = true },
 
   cheatsheet = {
-    theme = "grid", -- simple/grid
+    theme = "grid",                                                     -- simple/grid
     excluded_groups = { "terminal (t)", "autopairs", "Nvim", "Opens" }, -- can add group name or with mode
   },
 
